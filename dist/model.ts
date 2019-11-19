@@ -16,7 +16,7 @@ function getInventoryItem(trackingNumber: string): InventoryItem {
   return null;
 }
 
-function saveInventoryItem(item) {
+function saveInventoryItem(item: InventoryItem) {
 
 }
 
