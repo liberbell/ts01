@@ -19,7 +19,7 @@ function getInventoryItem(trackingNumber: string): InventoryItem {
 }
 
 function saveInventoryItem(item: InventoryItem) {
-
+  item.trackingNumber = "12345"
 }
 
 let inventoryItem = getInventoryItem(trackingNumber);
