@@ -10,6 +10,8 @@ interface InventoryItem{
   trackingNumber: string;
   createDate: Date;
   originalCost: number;
+
+  addNote: (note: string) => string;
 }
 
 function getInventoryItem(trackingNumber: string): InventoryItem {
