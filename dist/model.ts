@@ -24,4 +24,12 @@ let inventoryItem = getInventoryItem(trackingNumber);
 let updateInventoryItem = inventoryItem;
 
 inventoryItem.createDate = new Date();
-saveInventoryItem(inventoryItem);
+// saveInventoryItem(inventoryItem);
+
+saveInventoryItem({
+  displayName: "Mac book",
+  inventoryType: "Computer",
+  trackingNumber: "MBP123455",
+  createDate: new Date(),
+  originalCost: 1499
+});
