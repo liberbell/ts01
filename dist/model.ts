@@ -5,7 +5,7 @@ let createDate: Date = new Date();
 let originalCost = 425;
 
 function getInventoryItem(trackingNumber: string): object {
-
+  return null;
 }
 
 function saveInventoryItem(item) {
