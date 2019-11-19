@@ -1,6 +1,6 @@
 let displayName: string = "Jess`s standing desk";
-let inventoryType = "furniture";
-let trackingNumber = "FD123455";
+let inventoryType: string = "furniture";
+let trackingNumber: string = "FD123455";
 let createDate = new Date();
 let originalCost = 425;
 
