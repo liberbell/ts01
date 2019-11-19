@@ -1,4 +1,4 @@
-let displayName = "Jess`s standing desk";
+let displayName: string = "Jess`s standing desk";
 let inventoryType = "furniture";
 let trackingNumber = "FD123455"
 let createDate = new Date();
@@ -15,5 +15,4 @@ function saveInventoryItem(item) {
 let inventoryItem = getInventoryItem(trackingNumber);
 
 inventoryItem.createDate = new Date();
-
 saveInventoryItem(inventoryItem);
