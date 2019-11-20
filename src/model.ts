@@ -5,8 +5,8 @@ let createDate: Date = new Date();
 let originalCost = 425;
 
 enum InventoryItemType{
-  Computer,
-  Furniture
+  Computer = "computer",
+  Furniture = "furniture"
 }
 
 interface InventoryItem {
