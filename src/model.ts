@@ -3,6 +3,7 @@ let inventoryType: string = "furniture";
 let trackingNumber: string = "FD123455";
 let createDate: Date = new Date();
 let originalCost = 425;
+originalCost = "A lot of money!";
 
 enum InventoryItemType{
   Computer = "computer",
