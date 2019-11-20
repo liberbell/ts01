@@ -11,7 +11,7 @@ enum InventoryItemType{
 
 interface InventoryItem {
     displayName: string;
-    inventoryType: string;
+    inventoryType: InventoryItemType;
     readonly trackingNumber: string;
     createDate: Date;
     originalCost?: number;
