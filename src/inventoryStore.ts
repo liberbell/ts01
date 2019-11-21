@@ -1,8 +1,8 @@
 class InventoryStore {
   _categories;
-  _items;
-  _isInitialized;
-  
+  _items: InventoryItem[];
+  _isInitialized: Promise<boolean>;
+
   /** the inventory categories */
   get categories() {
     return this._categories;
