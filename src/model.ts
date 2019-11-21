@@ -5,7 +5,7 @@ let createDate: Date = new Date();
 
 type Cost = number | string;
 
-let originalCost: number | string = 425;
+let originalCost: Cost = 425;
 originalCost = "A lot of money!";
 
 enum InventoryItemType{
