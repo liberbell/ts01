@@ -7,7 +7,9 @@ type Cost = number | string;
 
 let originalCost: Cost;
 
-let cost: number = originalCost;
+if(typeof originalCost === "number"){
+  let cost: number = originalCost;
+}
 
 enum InventoryItemType{
   Computer = "computer",
