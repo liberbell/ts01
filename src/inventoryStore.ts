@@ -1,3 +1,9 @@
+interface  Category     {
+      name: string,
+      displayName: string,
+      subCategories: { name: string, displayName: string } []
+    }
+
 class InventoryStore {
   _categories;
   _items: InventoryItem[];
