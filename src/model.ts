@@ -2,6 +2,9 @@ let displayName: string = "Jess's standing desk";
 let inventoryType: string = "furniture";
 let trackingNumber: string = "FD123455";
 let createDate: Date = new Date();
+
+type Cost = number | string;
+
 let originalCost: number | string = 425;
 originalCost = "A lot of money!";
 
