@@ -9,6 +9,8 @@ let originalCost: Cost;
 
 if(typeof originalCost === "number"){
   let cost: number = originalCost;
+} else {
+  let x = originalCost;
 }
 
 enum InventoryItemType{
