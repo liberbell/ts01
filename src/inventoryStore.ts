@@ -5,7 +5,7 @@ interface  Category     {
     }
 
 class InventoryStore {
-  _categories;
+  _categories: Category;
   _items: InventoryItem[];
   _isInitialized: Promise<boolean>;
 
