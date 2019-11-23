@@ -43,7 +43,7 @@ class InventoryStore {
    * @param {string} trackingNumber the item's tracking number
    * @returns the inventory item with the given tracking number, or null
    */
-  getItem(trackingNumber) {
+  getItem(trackingNumber: string) {
     return this._items.find(x => x.trackingNumber === trackingNumber);
   }
 
