@@ -187,10 +187,9 @@ class InventoryStore {
   }
 
   //#endregion
+  // Create a "static" singleton instance for the entire application to use
+  static instance = new InventoryStore();
 }
-
-// Create a "static" singleton instance for the entire application to use
-InventoryStore.instance = new InventoryStore();
 
 // Expose the singleton in its own variable
 const inventoryStore = InventoryStore.instance;
