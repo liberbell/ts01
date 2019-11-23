@@ -47,3 +47,8 @@ saveInventoryItem({
     trackingNumber: "MBP123456",
     createDate: new Date(),
 });
+
+function clone(source) {
+    const serialized = JSON.stringify(source);
+    return JSON.parse(serialized);
+}
