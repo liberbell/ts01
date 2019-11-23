@@ -193,3 +193,5 @@ class InventoryStore {
 
 // Expose the singleton in its own variable
 const inventoryStore = InventoryStore.instance;
+
+InventoryStore._save({} as any);
