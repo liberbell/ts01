@@ -53,7 +53,7 @@ class InventoryStore {
    * @param {InventoryItem} item the item to add to inventory
    * @returns {Promise<InventoryItem>} promise containing the updated item after it's been saved
    */
-  addItem(item) {
+  addItem(item: InventoryItem): Promise<InventoryItem> {
     const errors = this.validateItem(item);
 
     if (errors.length) {
