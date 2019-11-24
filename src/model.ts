@@ -59,3 +59,5 @@ interface KeyValuePair<TKey, TValue> {
   Key: Tkey;
   Value: TValue;
 }
+
+var keyValue: KeyValuePair<string, number> = {Key: "something"};
