@@ -48,9 +48,9 @@ saveInventoryItem({
     createDate: new Date(),
 });
 
-function clone<T>(source: T): T {
+function clone<T, U>(source: T, options: U): T {
     const serialized = JSON.stringify(source);
     return JSON.parse(serialized);
 }
 
-const cloned = clone<InventoryItem>(inventoryItem);
+const cloned = clone(inventoryItem, {deep: true });
