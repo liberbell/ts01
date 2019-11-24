@@ -54,3 +54,8 @@ function clone<T, U>(source: T, options: U): T {
 }
 
 const cloned = clone(inventoryItem, {deep: true });
+
+interface KeyValuePair<TKey, TValue> {
+  Key: Tkey;
+  Value: TValue;
+}
