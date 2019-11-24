@@ -52,3 +52,5 @@ function clone(source) {
     const serialized = JSON.stringify(source);
     return JSON.parse(serialized);
 }
+
+const closed = clone(inventoryItem);
