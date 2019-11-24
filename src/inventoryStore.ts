@@ -19,9 +19,9 @@ class InventoryStore {
     return this._items;
   }
 
-  set items(value) {
-    this._items = value;
-  }
+  // set items(value) {
+  //   this._items = value;
+  // }
 
   /** promise indicating whether the store has been initialized */
   get isInitialized() {
@@ -43,7 +43,7 @@ class InventoryStore {
    * @param {string} trackingNumber the item's tracking number
    * @returns the inventory item with the given tracking number, or null
    */
-  getItem(trackingNumber: string) {
+  getItem(trackingNumber: string): InventoryItem {
     return this._items.find(x => x.trackingNumber === trackingNumber);
   }
 
