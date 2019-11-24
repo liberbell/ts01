@@ -48,9 +48,9 @@ saveInventoryItem({
     createDate: new Date(),
 });
 
-function clone(source) {
+function clone(source: InventoryItem): InventoryItem {
     const serialized = JSON.stringify(source);
     return JSON.parse(serialized);
 }
 
-const closed = clone(inventoryItem);
+const cloned = clone(inventoryItem);
